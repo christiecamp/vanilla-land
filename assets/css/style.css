@@ -1,11 +1,11 @@
 /* Universal Selectors */
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     font-family:'Raleway';
     color: black;
 }
@@ -18,7 +18,10 @@ body{
     src: url('../fonts/Raleway-ExtraLight.ttf') format('truetype');
 }
 
-header{
+header {
+    display: flex;
+    /* Defines how to distribute the empty space between child elements */
+    justify-content: space-between;
     padding: 15px;
     color: black;
     background-color: grey;
@@ -26,9 +29,11 @@ header{
 
 /* navigation on the lefthand side */
 nav {
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
     padding: 20px;
     margin-right: 10px;
-    float: right;
     font-family: 'Raleway';
     font-size: 15px;
 }
@@ -47,21 +52,26 @@ nav ul li {
 main {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 3%;
 }
 
 /* card class will be used for images */
 
 .card {
+     /* A flex-basis of 200px sets the starting width */
+    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+    /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
+    flex: 1 1 200px;
+    /*padding represents size of the box*/
+    padding: 200px;
+    text-align: center;
     border-style: solid;
     border-width: 1px;
-    padding: 200px;
-    margin-top: 50px;
-    width: 33.33%;
-    float: left;
+
   }
 
 .card img {
-    width:100%;
+    width:50%;
 }
 
 footer {
