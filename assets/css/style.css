@@ -38,28 +38,6 @@ nav {
     font-size: 15px;
 }
 
-/*hover color for links*/
-nav a:hover {
-    color: darkgrey;
-  }
-
-.kebab {
-/*changes cursor*/
-  cursor: point er;
-  position: relative;
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 0 16px;
-  top: 12px;
-}
-
-.links {
-display: none;
-padding: 1% 0;
-}
-
-
-
 /*turns element into a flexbox */
 /*flexwrap forces elements to the next line if they don't fit */
 main {
@@ -120,63 +98,3 @@ footer {
         width: 100%;
       }
   }
-
-
-
-
-
-
-
-
-  /* Kebab styling
-
-.kebab {
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-  box-sizing: border-box;
-  padding: 0 16px;
-  top: 12px;
-  figure {
-    width: 6px;
-    height: 6px;
-    border-radius: 5px;
-    background: $cyan;
-    margin: 3px 0;
-  }
-}
-
-.middle {
-  transition: all 0.25s $cubic-in;
-  transform: scale(1);
-  position: relative;
-  box-shadow: 0 0.1px 0.1px 0 rgba(0, 0, 0, 0.16), 0 0.1px 0.3px 0 rgba(0, 0, 0, 0.12);
-  -webkit-filter: blur(.1px);
-  filter: blur(.1px);
-}
-
-.middle.active {
-  transform: scale(4.5);
-  transition: all 0.25s $cubic-out;
-  box-shadow: 0 0.1px 0.1px 0 rgba(0, 0, 0, 0.16), 0 0.1px 0.3px 0 rgba(0, 0, 0, 0.12);
-}
-
-.cross {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  margin-top: -1px;
-  font-family: $nunito;
-  color: white;
-  transition: all 0.2s $cubic-in;
-  font-size: 22px;
-  user-select: none;
-}
-
-.cross.active {
-  transform: translate(-50%, -50%) scale(1);
-  transition: all 0.15s $cubic-out;
-}
-
-*/
