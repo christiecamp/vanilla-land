@@ -8,6 +8,7 @@
 body {
     font-family:'Raleway';
     color: black;
+    margin: 0;
 }
 
 /* want to use custom font in project. Downloaded fonts in ../fonts and linked through src:url */
@@ -32,7 +33,6 @@ nav {
     display: flex;
     /* Forces elements to the next line if they don't fit */
     flex-wrap: wrap;
-    padding: 20px;
     margin-right: 10px;
     font-family: 'Raleway';
     font-size: 15px;
@@ -43,6 +43,7 @@ nav ul {
 }
 
 nav ul li {
+    /* keeps links in line */
     display: inline-block;
     margin-left: 25px;
 }
@@ -53,25 +54,26 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 3%;
+    justify-content: space-between;
 }
 
 /* card class will be used for images */
-
 .card {
      /* A flex-basis of 200px sets the starting width */
     /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
     /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
-    flex: 1 1 200px;
-    /*padding represents size of the box*/
-    padding: 200px;
-    text-align: center;
+    flex: 1 0 200px;
+    padding: 0px;
     border-style: solid;
     border-width: 1px;
 
   }
 
 .card img {
-    width:50%;
+    width: 100%;
+    min-width: 400px;
+    object-fit: contain;
+    margin-top: 0;
 }
 
 footer {
