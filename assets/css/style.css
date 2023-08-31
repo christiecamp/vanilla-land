@@ -9,6 +9,9 @@ body {
     font-family:'Raleway';
     color: black;
     margin: 0;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /* want to use custom font in project. Downloaded fonts in ../fonts and linked through src:url */
@@ -32,11 +35,23 @@ header {
 nav {
     display: flex;
     /* Forces elements to the next line if they don't fit */
-    flex-wrap: wrap;
     margin-right: 10px;
     font-family: 'Raleway';
     font-size: 15px;
 }
+
+.hero {
+    /*Sets the height and width of the image */
+        display:flex;
+        flex-wrap: wrap;
+        height: 600px;
+        width: 100%;
+        /* Sets bottom margin to 25 */
+        background-image: url("../images/Hero.png");
+        background-size: cover;
+        background-position: center;
+        margin-top: 50px;
+    }
 
 /*turns element into a flexbox */
 /*flexwrap forces elements to the next line if they don't fit */
@@ -44,48 +59,54 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin-top: 3%;
-    justify-content: space-between;
 }
+
+h2 {
+    margin-bottom:20px;
+    text-align: left;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }  
 
 /* card class will be used for images */
 .card {
      /* A flex-basis of 200px sets the starting width */
     /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
     /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
-    flex: 1 0 200px;
+    flex: 1 0 400px;
     padding: 0px;
     border-style: solid;
     border-width: 1px;
-
   }
 
 .card img {
     width: 100%;
     min-width: 400px;
-    object-fit: contain;
-    margin-top: 0;
 }
 
 footer {
-    background-color:grey;
-    text-align: center;
-}
-
-
-/* Image Placeholders */
-/*.sample-img {
-    background-color: #fff;
     width: 100%;
+    bottom: 0;
     padding: 20px;
-    height: 200px;
-    border: 1px solid black;
-  } */
+    background-color: grey;
+    text-align: center;
+    margin-top: auto;
+}
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
 
 /* Tablets*/
 /* Cards are split into two columns at 992px or smaller */
 @media screen and (max-width: 992px) {
+    main,
+    nav{
+        flex-direction: column;
+    }
     .card {
         width: 50%;
       }
@@ -94,7 +115,11 @@ footer {
   /* Large smartphones */
   /* Cards are stacked on top of each other at 768px or smaller */
   @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
     .card {
         width: 100%;
       }
   }
+}
