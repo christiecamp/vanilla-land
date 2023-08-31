@@ -1,10 +1,11 @@
-/* Utilizing reset.css template from most recent activities */
+/* Resets the box size of every element */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
+  /* Gives the body element a parent height to compare against */
   html {
     height: 100%;
   }
@@ -24,6 +25,7 @@
     font-size: 100%;
   }
   
+  /* Matches the font of special elements to the rest of the page */
   input,
   select,
   option,
@@ -36,6 +38,7 @@
     font-family: inherit;
   }
   
+  /* Removes default bullet points from lists */
   ol,
   ul {
     list-style: none;
