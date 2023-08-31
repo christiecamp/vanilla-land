@@ -38,6 +38,17 @@ nav {
     font-size: 15px;
 }
 
+.hero {
+    /*Sets the height and width of the image */
+        height: 600px;
+        width: 100%;
+        /* Sets bottom margin to 25 */
+        background-image: url("../images/Hero.png");
+        background-size: cover;
+        background-position: center;
+        padding: 100px;
+    }
+
 /*turns element into a flexbox */
 /*flexwrap forces elements to the next line if they don't fit */
 main {
@@ -47,25 +58,31 @@ main {
     justify-content: space-between;
 }
 
+h2 {
+    margin-bottom:20px;
+    text-align: left;
+}
+
 /* card class will be used for images */
 .card {
      /* A flex-basis of 200px sets the starting width */
     /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
     /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
-    flex: 1 0 200px;
-    padding: 0px;
+    flex: 1 0 400px;
+    padding: 10px;
     border-style: solid;
     border-width: 1px;
   }
 
 .card img {
+    display: block;
+    object-fit: contain;
     width: 100%;
     min-width: 400px;
-    object-fit: contain;
-    margin-top: 0;
 }
 
 footer {
+    padding: 30px;
     background-color:grey;
     text-align: center;
 }
