@@ -22,7 +22,7 @@ body {
 @font-face {
     font-family: 'Raleway';
     src: url('../fonts/Raleway-ExtraLight.ttf')
-     format('truetype');
+     format('truetype'); /*font ttf */
 
 }
 
@@ -109,6 +109,9 @@ h3 {
     text-align: center;
     font-size: 100%;
 }
+
+
+/* Utilizing code from source: https://codepen.io/matmarsiglio/pen/pojoPR and repurposing it to fit what I need for my contact form */
 
 #form {
   position: relative;
