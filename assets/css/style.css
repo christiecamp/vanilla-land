@@ -8,8 +8,10 @@
 body {
     font-family:'Raleway';
     color: black;
+    background-color: white;
     margin: 0;
     min-height: 100vh;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -19,17 +21,22 @@ body {
 
 @font-face {
     font-family: 'Raleway';
-    src: url('../fonts/Raleway-ExtraLight.ttf') format('truetype');
+    src: url('../fonts/Raleway-ExtraLight.ttf')
+     format('truetype');
+
 }
 
 header {
     display: flex;
     /* Defines how to distribute the empty space between child elements */
     justify-content: space-between;
-    padding: 15px;
-    color: black;
-    background-color: grey;
+    padding: 1%;
 }
+
+h1 {
+    margin: 0;
+    font-size: 200%;
+  }
 
 /* navigation on the lefthand side */
 nav {
@@ -44,28 +51,29 @@ nav {
     /*Sets the height and width of the image */
         display:flex;
         flex-wrap: wrap;
-        height: 600px;
+        height: 500px;
         width: 100%;
         /* Sets bottom margin to 25 */
         background-image: url("../images/Hero.png");
         background-size: cover;
         background-position: center;
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
 /*turns element into a flexbox */
 /*flexwrap forces elements to the next line if they don't fit */
 main {
+    font-family: 'Raleway';
     display: flex;
     flex-wrap: wrap;
-    margin-top: 3%;
 }
 
 h2 {
-    margin-bottom:20px;
+    margin: 10px;
+    padding: 0;
     text-align: left;
+    font-size: 150%;
 }
-
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -78,7 +86,7 @@ h2 {
      /* A flex-basis of 200px sets the starting width */
     /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
     /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
-    flex: 1 0 400px;
+    flex: 1 1 400px;
     padding: 0px;
     border-style: solid;
     border-width: 1px;
@@ -86,15 +94,106 @@ h2 {
 
 .card img {
     width: 100%;
+    height: 100%;
     min-width: 400px;
 }
 
-footer {
-    width: 100%;
-    bottom: 0;
-    padding: 20px;
-    background-color: grey;
+.contact{
+    display: flex;
+    flex-direction: row;
+}
+
+h3 {
+    margin: 10px;
+    padding: 0;
     text-align: center;
+    font-size: 100%;
+}
+
+#form {
+  position: relative;
+  width: 400px;
+  margin: 100px auto 100px auto;
+}
+
+/*name and email address*/
+input {
+  font-size: 0.875em;
+  width: 400px;
+  height: 30px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+
+/* text section of contact form */
+textarea {
+  width: 400px;
+  max-width: 400px;
+  height: 100px;
+  max-height: 100px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 400px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    padding: 1%;
     margin-top: auto;
 }
 
