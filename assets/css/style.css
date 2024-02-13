@@ -1,117 +1,112 @@
 /* Universal Selectors */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 @font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway-ExtraLight.ttf')
-  format('truetype'); /*font ttf */
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-ExtraLight.ttf") format("truetype"); /*font ttf */
 }
 
 body {
-    font-family:'Raleway';
-    color: white;
-    background-color: black;
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  font-family: "Raleway";
+  color: white;
+  background-color: black;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
-    display: flex;
-    /* Defines how to distribute the empty space between child elements */
-    justify-content: space-between;
-    padding: 1%;
+  display: flex;
+  /* Defines how to distribute the empty space between child elements */
+  justify-content: space-between;
+  padding: 1%;
 }
 
 h1 {
-    margin: 0;
-    font-size: 200%;
-  }
+  margin: 5px;
+  font-size: 200%;
+}
 
 /* navigation on the lefthand side */
 nav {
-    display: flex;
-    /* Forces elements to the next line if they don't fit */
-    margin-right: 10px;
-    font-size: 15px;
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  margin-right: 10px;
+  font-size: 15px;
+  color: white;
+
 }
 
 .hero {
-    /*Sets the height and width of the image */
-        display:flex;
-        flex-wrap: wrap;
-        height: 500px;
-        width: 100%;
-        /* Sets bottom margin to 25 */
-        background-image: url("../images/gremlin-land1.png");
-        background-size: cover;
-        background-position: center;
-        margin-top: 0px;
-    }
+  /*Sets the height and width of the image */
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: 100%;
+  /* Sets bottom margin to 25 */
+  background-image: url("../images/gremlin-land1.png");
+  background-size: cover;
+  background-position: center;
+  margin-top: 10px;
+}
 
 /*turns element into a flexbox */
 /*flexwrap forces elements to the next line if they don't fit */
 main {
-    font-family: 'Raleway';
-    display: flex;
-    flex-wrap: wrap;
+  font-family: "Raleway";
+  display: flex;
+  flex-wrap: wrap;
 }
 
 h2 {
-    margin: 10px;
-    padding: 0;
-    text-align: left;
-    font-size: 150%;
+  margin: 10px;
+  padding: 0;
+  text-align: center;
+  font-size: 150%;
+
 }
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-  }  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
 
 /* card class will be used for images */
 .card {
-     /* A flex-basis of 200px sets the starting width */
-    /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-    /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
-    flex: 1 1 400px;
-    padding: 0px;
-    border-style: solid;
-    border-width: 1px;
-  }
+  /* A flex-basis of 200px sets the starting width */
+  /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+  /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
+  flex: 1 1 400px;
+  padding: 0px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 10px;
+  border-color: white;
+}
 
 .card img {
-    width: 100%;
-    height: 100%;
-    min-width: 400px;
+  width: 100%;
+  height: 100%;
+  min-width: 400px;
+  min-height: 400px;
+  object-fit: cover;
 }
-
-.contact{
-    display: flex;
-    flex-direction: row;
-}
-
-h3 {
-    margin: 10px;
-    padding: 0;
-    text-align: center;
-    font-size: 100%;
-}
-
 
 footer {
-    display: flex;
-    justify-content: center;
-    bottom: 0;
-    padding: 1%;
-    margin-top: auto;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  padding: 10px;
+  margin-top: auto;
 }
 
 /* When using `max-width` as the breakpoint, you must go from widest to narrowest to avoid conflict */
@@ -119,23 +114,23 @@ footer {
 /* Tablets*/
 /* Cards are split into two columns at 992px or smaller */
 @media screen and (max-width: 992px) {
-    main,
-    nav{
-        flex-direction: column;
-    }
-    .card {
-        width: 50%;
-      }
+  main,
+  nav {
+    flex-direction: column;
   }
-  
-  /* Large smartphones */
-  /* Cards are stacked on top of each other at 768px or smaller */
-  @media screen and (max-width: 768px) {
-    main,
-    nav {
-      flex-direction: column;
+  .card {
+    width: 50%;
+  }
+}
+
+/* Large smartphones */
+/* Cards are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
     .card {
-        width: 100%;
-      }
+      width: 100%;
+    }
   }
 }
