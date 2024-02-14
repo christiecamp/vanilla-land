@@ -39,8 +39,8 @@ nav {
   /* Forces elements to the next line if they don't fit */
   margin-right: 10px;
   font-size: 15px;
-  color: white;
 }
+
 
 .hero {
   /*Sets the height and width of the image */
@@ -99,6 +99,14 @@ h2 {
   object-fit: cover;
 }
 
+.about-me {
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -109,12 +117,11 @@ h2 {
   padding: 10px;
 }
 
-
 footer {
   display: flex;
   justify-content: center;
   bottom: 0;
-  margin:10px;
+  margin: 10px;
   padding: 10px;
   margin-top: auto;
 }

@@ -37,7 +37,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 The following image shows my finished project:
 
-![A user clicks on slots on the color-coded calendar and edits the events.](./assets/images/day-dreamer-ss.png)
+![A user clicks on slots on the color-coded calendar and edits the events.](./assets/images/ss.png)
 
 ## Changes Made to Code
 
