@@ -1,5 +1,5 @@
 <p align="center">
-<img height= '500px' src="./swirly-swirl/header.png"/>
+<img height= '600px' src="./swirly-swirl/header.png"/>
 </p>
 
 [![canva badge](https://img.shields.io/badge/canva-orange.svg?&logo=canva&logoColor=white)](https://canva.com/)
