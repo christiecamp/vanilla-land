@@ -1,56 +1,28 @@
-# M2 CHALLENGE - Vanilla Portfolio
+<p align="center">
+<img src="./swirly-swirl/header.png"/>
+</p>
 
-## My Task
+[![canva badge](https://img.shields.io/badge/canva-orange.svg?&logo=canva&logoColor=white)](https://canva.com/)
 
-Create a portfolio utilizing HTML and CSS
+<p align="left">
+  <img alt="mode" src="https://img.shields.io/badge/view-darkmode-black.svg?&logo=Github&logoColor=white" >
+</p>
 
-## User Story
+Hi! 👋 I'm **`Christine`**!
 
-```
-AS AN employer
-I WANT to view a potential employee's deployed portfolio of work samples
-SO THAT I can review samples of their work and assess whether they're a good candidate for an open position
-```
+I'm an fresh *full-stack web developer* with a passion for creating and designing 🧚
 
+**Welcome to my [vanilla portfolio](https://christiecamp.github.io/vanilla-land/)** 👾
 
-## Acceptance Criteria
+#
+![banner](./swirly-swirl/cyber-relax.png)
+#
 
-Here are the critical requirements necessary to develop a portfolio that satisfies a typical hiring manager’s needs:
+[![Github Badge](https://img.shields.io/badge/christiecamp-pink.svg?&logo=Github&logoColor=white)](https://github.com/christiecamp/alien-prone)
 
-```
-GIVEN I need to sample a potential employee's previous work
-WHEN I load their portfolio
-THEN I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them
-WHEN I click one of the links in the navigation
-THEN the UI scrolls to the corresponding section
-WHEN I click on the link to the section about their work
-THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
-WHEN I click on the images of the applications
-THEN I am taken to that deployed application
-WHEN I resize the page or view the site on various screens and devices
-THEN I am presented with a responsive layout that adapts to my viewport
-```
-
-## Project Screen Grab
-
-The following image shows my finished project:
-
-![A user clicks on slots on the color-coded calendar and edits the events.](./assets/images/ss.png)
-
-## Changes Made to Code
-
-> **All changes have been documented as comments in HTML,CSS, and JS**
-
-## Link to Website
-
-[CHRISTINE'S PROJECT](https://github.com/christiecamp/christiecamp-portfolio)
-
-## Submitted Pieces
-
-I have submitted the below:
-
-- The URL of the deployed application.
-
-- The URL of the GitHub repository, with a unique name and a README that describes the project.
+<a href="mailto:christiecamphoto@gmail.com">
+<img src="https://img.shields.io/badge/gmail-purple.svg?&logo=Gmail&logoColor=white" />
+</a>
+<p align="center">
+<a href="https://www.christiecamp.com"><img height= '150px' src ="./swirly-swirl/three-gremlins.png"></a>
+</p>
